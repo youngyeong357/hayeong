@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="정하영"> <!-- 포트폴리오 만들 시 필수!! 누가 만들었다 -->
+    <meta name="keywords" name="포트폴리오, html, css, 영상"> <!-- 키워드 : 누가 검색하면 검색되게 나오는 것 -->
+    <meta name="description" name="안녕하세요. 디자인 영상 전문입니다..."> <!-- 검색 시 밑에 나오는 설명문(description : 설명) > 두 번째 name의 내용이 나오게 됨 -->
+    <meta name="robots" content="noindex,nofollow"> <!-- 로봇 돌아다니는 것을 거부함 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicons -->
+    <link rel="icon" href="./images/꽃.jpg" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./images/호랭이.jpg"> <!-- 일반과 apple 크기가 다름(48*48(아마도) // 파일명; apple-touch-icon.png 이런 식으로) -->
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/app.css"> <!-- 내가 만들 거 / 밑에 있는 게 장땡이니까 내가 만들 거를 밑에 두자 -->
+    <title>하영쓰의 포트폴리오(aka miniproject)</title>
+</head>
+<body>
+    <!-- header -->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+             <!-- container를 하면 메뉴랑 내용이 같은 선에서 시작하게 됨(이쁘게 나오겠쥬) -->
+                <!-- 로고 넣기 -->
+                <a href="#" class="navbar-brand pacifico-jeong fs-1">
+                    <!-- <img src="./images/logo.svg" alt=""> << 이미지로 넣을 수도 있다~(SVG권장) -->
+                    Hayeong Jeong
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"> <!-- aria-controls : 위젯 만드는 거 > 이름은 target 아이디명과 동일
+                    aira-expanded : 초기값 펼쳐놓을 거냐 : false(no)/true(yes) -->
+                    <span class="navbar-toggler-icon"></span></button>
+
+                <div id="navbarNav" class="collapse navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="#resum" class="nav-link">Resum</a></li>
+                        <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </nav>
+    </header>
+    <!-- / header -->
+    
+    <!-- main -->
+    <main>
+        <section id="portfolio">
+            <!-- modal -->
+        </section>
+    </main>
+    <!-- / main -->
+
+    <!-- Footer -->
+    <footer>
+
+    </footer>
+    <!-- / Footer -->
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/app.js"></script> <!-- 내가 만들 거 -->
+</body>
+</html>
