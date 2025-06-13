@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="author" content="정하영"> <!-- 포트폴리오 만들 시 필수!! 누가 만들었다 -->
     <meta name="keywords" name="포트폴리오, html, css, 영상"> <!-- 키워드 : 누가 검색하면 검색되게 나오는 것 -->
-    <meta name="description" name="안녕하세요. 디자인 영상 전문입니다..."> <!-- 검색 시 밑에 나오는 설명문(description : 설명) > 두 번째 name의 내용이 나오게 됨 -->
+    <meta name="description" name="안녕하세요. 디자인 영상 전문입니다...!!!!"> <!-- 검색 시 밑에 나오는 설명문(description : 설명) > 두 번째 name의 내용이 나오게 됨 -->
     <meta name="robots" content="noindex,nofollow"> <!-- 로봇 돌아다니는 것을 거부함 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -32,13 +32,34 @@
                     <span class="navbar-toggler-icon"></span></button>
 
                 <div id="navbarNav" class="collapse navbar-collapse">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0"> <!-- me-auto : 오른쪽으로 붙임 / mb-2 : marginbottom / mb-lg-0 : lg 크기일 때 mb를 0으로 해라 -->
                         <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
                         <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
                         <li class="nav-item"><a href="#resum" class="nav-link">Resum</a></li>
-                        <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                        <li class="nav-item dropdown">
+                            <a href="#portfolio" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" id="navbarDropdown" role="button" aria-expanded="false">Portfolio</a> <!-- role 이하 : 생략해도 됨 -->
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="">디자인</a></li>
+                                <li><a class="dropdown-item" href="">영 상</a></li>
+                                <li><a class="dropdown-item" href="">피그마</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="">WEB</a></li>
+                            </ul>
+                        
+                        </li>
                         <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
                     </ul>
+                    <form class="d-flex">
+                         <!-- action : 우리는 디자인이라 필요 없어 생략(자료 넘기는 기능)
+                           d-flex : search 버튼을 위로 올림
+                         -->
+                        <input type="search" class="form-control me-3" placeholder="검색하세요." aria-label="Search">
+                          <!--
+                            form-control : 부트스트랩에서 만들어 놓은 형태
+                            placeholder : 상자 안에 들어갈 말  
+                          -->
+                        <button type="submit" class="btn btn-outline-success">Search</button>
+                    </form>
                 </div>
 
             </div>
