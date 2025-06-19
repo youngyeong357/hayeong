@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="김을령이">
+    <meta name="keywords" name="포트폴리오, html, css, 을령">
+    <!-- 이거는 검색어를 설정하는 것임 포폴이나 html css등을 검색하면 내꺼 나와라 라는 의미 -->
+    <meta name="description" name="안녕하세요 디자인 영상 전문가 김을령입니다....  ...">
+    <!-- 이거는 검색 후 하단에 작은 글씨의 설명같은 역할 묘사하다.  -->
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicons -->
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./images/favicon.ico" type="image">
+    <!-- 48*48로 기존 파비콘과 다르게 하나 더 만들어줘야함 애플용 -->
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link href="./css/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/app.css">
+    <!-- 내가 만든 app.css를 더 하단에 두어야 내가 가져온 부트스트랩에서 수정할 부분이 적용됨.  -->
+    <title>2025.06.12 을령이의 miniPJT</title>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <!-- Header start -->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-secondery bg-white border">
+            <!-- navbar-expand-lg 이거를 확인해보면 화면크기가 커지면(윈도우사이즈) 햄버거버튼 안나온다 -->
+            <div class="container">
+                <a href="#" class="navbar-brand logo-ballet-daeul fs-1 mt-3 me-5">
+                    <img src="./images/Asset 2.png" class="rounded-pill me-5" style="width: 80px;" alt="">Eulryeong Kim</a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false">
+                <!-- aria-expanded:초기값을 펼쳐놓음으로 지정할것이냐 라는말에 false로 거절 -->
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div id="navbarNav" class="collapse navbar-collapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="#resum" class="nav-link">Resum</a></li>
+                        <li class="nav-item dropdown ">
+                            <a href="#portfolio" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" id="navbarDropdown" role="button" aria-expanded="false">Portfolio</a>
+                            <!-- role 이하 생략 가능 -->
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="">Design</a></li>
+                                <li><a class="dropdown-item" href="">Video</a></li>
+                                <li><a class="dropdown-item" href="">Figma</a></li>
+                                <li><a class="dropdown-item" href="">Logo</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="">WEB</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="#contant-me" class="nav-link">Contact me</a></li>
+
+                    </ul>
+                    <form class="d-flex">
+                        <input type="search" class="form-control me-3" placeholder="검색하세여...!" aria-label="seach">
+                        <button type="sumit" class="btn btn-outline-success">Search</button>
+                    </form>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+    <!-- Header end -->
+
+    <!-- main start -->
+    <main>
+        <!-- 제일 윗부분 사진 7 설명5 부분 #aaa start  -->
+        <section id="aaa" class="my-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 order-1 order-md-0">
+                        <img src="./images/고양이3.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md-5 order-0 order-md-1">
+                        <h1 class="mt-5">Eulryeong</h1>
+                        <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, ad maiores architecto nemo placeat eaque culpa, recusandae minus distinctio vel temporibus a ipsam deserunt iste exercitationem ex eveniet. Quasi, consequuntur?</p>
+                    </div>
+                </div>
+
+                <div class="row my-5">
+                    <div class="col">
+                        <div class="card bg-secondary text-white pt-3 pb-1.5 text-center">
+                            <div class="card-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, quibusdam mollitia?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br><br>
+        <!-- #aaa end  -->
+
+
+        <!-- career 연혁 start  -->
+        <section id="career">
+            <div class="container">
+                <h1 class="text-center my-4 logo-love-daeul">My Career Timeline</h1>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-item-content">
+                            <h3 class="logo-love-daeul">2018</h3>
+                            <p>Started my journey as a Junior Developer</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-item-content">
+                            <h3 class="logo-love-daeul">2019</h3>
+                            <p>Started my journey as a Junior Developer</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-item-content">
+                            <h3 class="logo-love-daeul">2020</h3>
+                            <p>Started my journey as a Junior Developer</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-item-content">
+                            <h3 class="logo-love-daeul">2021</h3>
+                            <p>Started my journey as a Junior Developer</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-item-content">
+                            <h3 class="logo-love-daeul">2022</h3>
+                            <p>Started my journey as a Junior Developer</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-item-content">
+                            <h3 class="logo-love-daeul">2023</h3>
+                            <p>Started my journey as a Junior Developer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br><br>
+        <!-- career 연혁 end  -->
+
+
+        <!-- Skill start -->
+        <section id="skill">
+            <div class="container my-5">
+                <h1 class="logo-love-daeul mb-3 text-center">Technical Skills</h1>
+                <br>
+                <p class="mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis voluptas aperiam fugit dolor expedita impedit, eius asperiores dolore possimus blanditiis iusto. Ipsum quasi, molestiae facilis est accusamus esse impedit at! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, doloremque beatae porro minus quo officiis tenetur iusto eligendi asperiores dolorem voluptates iure illum dolores illo pariatur nobis nesciunt alias cumque.</p>
+                <br><br>
+                <div class="row">
+                    <div class="col-md-6 mb-5">
+                        <div class="d-flex justify-content-between">
+                            <span>HTML</span>
+                            <span>98%</span>
+                        </div>
+                        <div class="progress" style="height: 30px;">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 0%;" data-bs-target="98"></div>
+                        </div> 
+                    </div>
+                    <div class="col-md-6 mb-5">
+                        <div class="d-flex justify-content-between">
+                            <span>FIGMA</span>
+                            <span>88%</span>
+                        </div>
+                        <div class="progress" style="height: 30px;">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 0%;" data-bs-target="88"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-5">
+                        <div class="d-flex justify-content-between">
+                            <span>DESIGN</span>
+                            <span>58%</span>
+                        </div>
+                        <div class="progress" style="height: 30px;">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 0%;" data-bs-target="58"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 mb-5">
+                        <div class="d-flex justify-content-between">
+                            <span>VIDEO</span>
+                            <span>38%</span>
+                        </div>
+                        <div class="progress" style="height: 30px;">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;" data-bs-target="38"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-5">
+                        <div class="d-flex justify-content-between">
+                            <span>AFTER EFFECT</span>
+                            <span>78%</span>
+                        </div>
+                        <div class="progress" style="height: 30px;">
+                            <div class="progress-bar bg-secondary" role="progressbar" style="width: 0%;" data-bs-target="78"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-5">
+                        <div class="d-flex justify-content-between">
+                            <span>프리미어 프로</span>
+                            <span>68%</span>
+                        </div>
+                        <div class="progress" style="height: 30px;">
+                            <div class="progress-bar bg-secondary" role="progressbar" style="width: 0%;" data-bs-target="68"></div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </section>
+        <br>
+        <!-- Skill end -->
+
+
+        <!-- Card start -->
+        <section id="card">
+            <div class="container">
+                <div class="row mt-3">
+                    <!-- d-grid 디스플레이 그리드  / d-grid gap-2 이거 두개는 세트임
+                         gap-2
+                        display : grid를 사용할 때 부모 그리드 컨테이너에서 gap 유틸리티를 사용할 수 있습니다. 이렇게하면 개별 그리드 항목 (display : grid 컨테이너의 자식 항목)에 여백 유틸리티를 추가할 필요가 없습니다. 간격 유틸리티는 기본적으로 반응형이며 $ spacers Sass 맵을 기반으로 유틸리티 API를 통해 생성됩니다.
+                         d-md-flex : d-flex를  md일때 적용 
+                         justify-content-md-center : ustify-content-center 를 md일때 적용-->
+                    <div class="card col-sm-12 col-md-6 col-lg-3">
+                        <a href="./card1.html" target="_blank"><img src="./images/T-1.jpg" class="card-img-top mt-3" alt=""></a>
+                        <div class="card-body">
+                            <div class="card-title">
+                                TEA GOEUL 1.
+                            </div>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, quod possimus?</p>
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                                <a href="./card1.html" target="-blank"><button class="btn btn-warning">Details</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-sm-12 col-md-6 col-lg-3">
+                        <a href="./card2.html" target="_blank"><img src="./images/T-2.jpg" class="card-img-top mt-3" alt=""></a>
+                        <div class="card-body">
+                            <div class="card-title">
+                                TEA GOEUL 2.
+                            </div>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, quod possimus?</p>
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                                <a href="./card2.html" target="-blank"><button class="btn btn-warning">Details</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-sm-12 col-md-6 col-lg-3">
+                        <a href="./card1.html" target="_blank"><img src="./images/T-3.jpg" class="card-img-top mt-3" alt=""></a>
+                        <div class="card-body">
+                            <div class="card-title">
+                                TEA GOEUL 3.
+                            </div>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, quod possimus?</p>
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                                <a href="./card1.html" target="-blank"><button class="btn btn-warning">Details</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-sm-12 col-md-6 col-lg-3">
+                        <a href="./card1.html" target="_blank"><img src="./images/T4.jpg" class="card-img-top mt-3" alt=""></a>
+                        <div class="card-body">
+                            <div class="card-title">
+                                TEA GOEUL 4.
+                            </div>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, quod possimus?</p>
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                                <a href="./card1.html" target="-blank"><button class="btn btn-warning">Details</button></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Card end -->
+
+
+        <!-- Portfolio start -->
+        <section id="portfolio">
+            <!-- modal -->
+            <div class="container mt-5">
+                <h1 class="logo-love-daeul text-center mb-5" data-aos="fade-up">Design & Video Portfolio</h1>
+                <input type="text" id="searchInput" class="form-control" placeholder="검색어를 입력하세요...">
+                
+                <!-- 모달 분류 버튼 시작 -->
+                <div class="text-center">
+                    <button type="button" class="mt-5 mx-2 btn btn-secondary filter-btn" data-filter="all">전체</button>
+                    <button type="button" class="mt-5 mx-2 btn btn-warning filter-btn" data-filter="design">디자인</button>
+                    <button type="button" class="mt-5 mx-2 btn btn-warning filter-btn" data-filter="video">비디오</button>
+                    <button type="button" class="mt-5 mx-2 btn btn-warning filter-btn" data-filter="figma">피그마</button>
+                </div>
+
+
+                <!-- 포트폴리오 아이템 시작 -->
+                <div class="row mt-5" data-aos="fade-up">
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item" data-category="design" data-aos="fade-up">
+                        <img src="./images/T4.jpg" alt="디자인" class="img-fluid" data-bs-toggle="modal" data-bs-target="#designModal1">
+                        <h4 class="text-center mt-3">Design PJT 1</h4>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item" data-category="design" >
+                        <img src="./images/T5.jpg" alt="디자인2" class="img-fluid" data-bs-toggle="modal" data-bs-target="#designModal2">
+                        <h4 class="text-center mt-3">Design PJT 2</h4>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item" data-category="figma" >
+                        <img src="./images/고양이1.jpg" alt="피그마1" class="img-fluid" data-bs-toggle="modal" data-bs-target="#figmaModal1">
+                        <h4 class="text-center mt-3">Figma PJT 1</h4>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item" data-category="figma" >
+                        <img src="./images/고양이2.jpg" alt="피그마2" class="img-fluid" data-bs-toggle="modal" data-bs-target="#figmaModal2">
+                        <h4 class="text-center mt-3">Figma PJT 2</h4>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item" data-category="video" >
+                        <img src="./images/T7.jpg" alt="비디오1" class="img-fluid" data-bs-toggle="modal" data-bs-target="#videoModal1">
+                        <h4 class="text-center mt-3">Video PJT 1</h4>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item" data-category="video" >
+                        <img src="./images/T-1.jpg" alt="비디오2" class="img-fluid" data-bs-toggle="modal" data-bs-target="#videoModal2">
+                        <h4 class="text-center mt-3">Video PJT 2</h4>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item" data-category="video">
+                        <img src="./images/T-2.jpg" alt="비디오3" class="img-fluid" data-bs-toggle="modal" data-bs-target="#videoModal3">
+                        <h4 class="text-center mt-3">Video PJT 3</h4>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item" data-category="video" >
+                        <img src="./images/T-3.jpg" alt="비디오4" class="img-fluid" data-bs-toggle="modal" data-bs-target="#videoModal4">
+                        <h4 class="text-center mt-3">Video PJT 4</h4>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item" data-category="video" >
+                        <img src="./images/T6.jpg" alt="비디오5" class="img-fluid" data-bs-toggle="modal" data-bs-target="#videoModal5">
+                        <h4 class="text-center mt-3">Video PJT 5</h4>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- Portfolio end -->
+
+
+        <!-- modal start -->
+        <section id="modal-section">
+            <div class="container">
+                <div class="modal" id="designModal1" tabindex="-1" aria-hidden="true"><!--여기서 모달 하나 시작-->
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div  class="modal-content">
+                            <div class="modal-header">
+                                <h5>Design PJT 1. 무릉도원</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body"></div>
+                            <img src="./images/T4.jpg" class="img-fluid mb-3" alt="">
+                            <p>이미지에 대한 설명을 적으시옵소서......</p>
+                            <div class="modal-footer"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal" id="designModal2" tabindex="-1" aria-hidden="true"><!--디자인모달2-->
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div  class="modal-content">
+                            <div class="modal-header">
+                                <h5>Design PJT 2. 야생차밭</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body"> <img src="./images/T5.jpg" class="img-fluid mb-3" alt=""></div>
+                            <div class="modal-footer"><p>이미지에 대한 설명을 적으시옵소서......</p></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal" id="figmaModal1" tabindex="-1" aria-hidden="true"><!--피그마모달1-->
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div  class="modal-content">
+                            <div class="modal-header">
+                                <h5>Figma PJT 1. 티고을 로고</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body"></div>
+                            <img src="./images/고양이1.jpg" class="img-fluid mb-3" alt="">
+                            <p>이미지에 대한 설명을 적으시옵소서......</p>
+                            <div class="modal-footer"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal" id="figmaModal2" tabindex="-1" aria-hidden="true"><!--피그마모달2-->
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div  class="modal-content">
+                            <div class="modal-header">
+                                <h5>Figma PJT 2. 티고을 로고2</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body"></div>
+                            <img src="./images/고양이2.jpg" class="img-fluid mb-3" alt="">
+                            <p>이미지에 대한 설명을 적으시옵소서......</p>
+                            <div class="modal-footer"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="videoModal1" tabindex="-1" aria-hidden="true"><!--비디오모달1-->
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div  class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Video PJT Youtube 태하네</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body"></div>
+                                <div class="ratio ratio-16x9"><!--가로세로 비율이 16:9입니다 라는 의미-->
+                                    <iframe src="https://www.youtube.com/embed/1x3Kf4vBxLI?mute=1&control=1&loop=1"  allowfullscreen></iframe><!--loof는 유튜브에서 자동으로 막힘. -->
+                                </div>
+                            <p>태하와 예린이의 하루!</p>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="videoModal2" tabindex="-1" aria-hidden="true"><!--비디오모달2-->
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div  class="modal-content">
+                            <div class="modal-header">
+                                <h5>Video PJT Youtube2. 다도시간</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body"></div>
+                                <div class="ratio ratio-16x9">
+                                    <iframe src="https://www.youtube.com/embed/1jfWZkHjFag?autoplay=1&mute=1&control=1&loop=1"  allowfullscreen></iframe>
+                                </div> 
+
+                            <p>다도를 시작해 봅시다. </p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="videoModal3" tabindex="-1" aria-hidden="true"><!--비디오모달3-->
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div  class="modal-content">
+                            <div class="modal-header">
+                                <h5>Design PJT 6. 찻잔</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body"></div>
+                                <div class="ratio ratio-16x9">
+                                    <video src="./images/video/차3.mp4" controls muted loop autoplay></video>
+                                </div>
+
+                            <p>이 영상은 유튜브 링크 말고 mp4 파일로 넣은 것......</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="videoModal4" tabindex="-1" aria-hidden="true"><!--비디오모달4-->
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div  class="modal-content">
+                            <div class="modal-header">
+                                <h5>Video PJT Youtube2. 다도시간</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body"></div>
+                                <div class="ratio ratio-16x9">
+                                    <video src="./images/video/차2.mp4" controls muted loop autoplay></video>
+                                </div> 
+
+                            <p>다도를 시작해 봅시다. </p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="videoModal5" tabindex="-1" aria-hidden="true"><!--비디오모달5-->
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div  class="modal-content">
+                            <div class="modal-header">
+                                <h5>Design PJT 6. 찻잔</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body"></div>
+                                <div class="ratio ratio-16x9">
+                                    <video src="./images/video/차1.mp4" controls muted loop autoplay></video>
+                                </div>
+
+                            <p>차를 한잔 마셔봅시다. </p>
+
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <!-- modal end -->
+
+
+    </main>
+    <!-- main end -->
+
+    <!-- Footer start -->
+    <footer class="footer mt-auto py-3 bg-secondary mt-auto">
+        <div class="container">
+            <div class="text-center">
+                <a href="#" class="footer-a text-white">@Copyleft 2025 고귀한 을령이</a> <!--저작권 없어요 아무나 다 쓰세요-->
+                <!-- container는 되도록 건들이지 말고 차라리 div로 공간을 지정해주고 하는게 났다.  -->
+            </div>
+        </div>
+    </footer>
+     <!-- Footer end -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/aos.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>

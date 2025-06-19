@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
+:root {
+  /* 전체 폰트, 색상 설정 */
+  --background-color : #ffffff;
+  --default-color : #444444;
+  --heading-color : #555555;
+  --accent-color : #3fbbc0;
+}
+
 .pacifico-jeong {
   font-family: "Pacifico", cursive;
   font-weight: 400;
@@ -80,3 +88,53 @@
   z-index: 1;
 }
 /* career section end */
+
+/* tabs section */
+.tabs {
+  overflow: hidden;
+}
+.tabs .nav-tabs {
+  border: 0;
+}
+
+#tabs .nav-link {
+  border: 0;
+  padding: 12px 5px 12px 0;
+  transition: 0.3s; /* 반응하는 것이(화면에 나오는 것이) 0.3초 */
+  color: var(--default-color);
+  border-radius: 0;
+  border-right: 2px solid color-mix(in srgb,var(--default-color), transparent 90%);
+  font-weight: 600;
+  font-size: 15px;
+}
+#tabs .nav-link:hover {
+  color: var(--accent-color);
+}
+#tabs .nav-link.active { /* 내가 찍은 것이 active가 됨 */
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+  background-color: var(--background-color-);
+}
+#tabs .details h3 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+#tabs .details p {
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+}
+#tabs .details p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width:992px) {
+  #tabs .nav-link {
+    border: 0;
+    padding: 15px;
+  }
+  #tabs .nav-link.active {
+    color: var(--background-color);
+    background: var(--accent-color);
+  }
+}
+/* tabs section end */

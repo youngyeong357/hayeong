@@ -13,6 +13,7 @@
     <link rel="apple-touch-icon" href="./images/호랭이.jpg"> <!-- 일반과 apple 크기가 다름(48*48(아마도) // 파일명; apple-touch-icon.png 이런 식으로) -->
 
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link href="./css/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/app.css"> <!-- 내가 만들 거 / 밑에 있는 게 장땡이니까 내가 만들 거를 밑에 두자 -->
     <title>하영쓰의 포트폴리오(aka miniproject)</title>
 </head>
@@ -243,7 +244,65 @@
         </section>
 
 
+        <!-- Portfolio start -->
+        <section id="portfolio">
+            <!-- modal -->
+            <div class="container mt-5">
+                <h1 class="text-center mb-5" data-aos="fade-up">Design & Video Portfolio</h1>
+                <input type="text" id="searchInput" class="form-control" placeholder="검색어를 입력하세요...">
+                
+                <!-- 모달 분류 버튼 시작 -->
+                <div class="text-center">
+                    <button type="button" class="mt-5 mx-2 btn btn-secondary filter-btn" data-filter="all">전체</button>
+                    <button type="button" class="mt-5 mx-2 btn btn-warning filter-btn" data-filter="design">디자인</button>
+                    <button type="button" class="mt-5 mx-2 btn btn-warning filter-btn" data-filter="video">비디오</button>
+                    <button type="button" class="mt-5 mx-2 btn btn-warning filter-btn" data-filter="figma">피그마</button>
+                </div>
 
+
+                <!-- 포트폴리오 아이템 시작 -->
+                <div class="row mt-5" data-aos="fade-up">
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item" data-category="design" data-aos="fade-up">
+                        <img src="./images/꽃.jpg" alt="디자인" class="img-fluid" data-bs-toggle="modal" data-bs-target="#designModal1">
+                        <h4 class="text-center mt-3">Design PJT 1</h4>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item" data-category="design" >
+                        <img src="./images/새.jpg" alt="디자인2" class="img-fluid" data-bs-toggle="modal" data-bs-target="#designModal2">
+                        <h4 class="text-center mt-3">Design PJT 2</h4>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item" data-category="figma" >
+                        <img src="./images/새끼고양이.jpg" alt="피그마1" class="img-fluid" data-bs-toggle="modal" data-bs-target="#figmaModal1">
+                        <h4 class="text-center mt-3">Figma PJT 1</h4>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item" data-category="figma" >
+                        <img src="./images/새끼멧돼지.jpg" alt="피그마2" class="img-fluid" data-bs-toggle="modal" data-bs-target="#figmaModal2">
+                        <h4 class="text-center mt-3">Figma PJT 2</h4>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item" data-category="video" >
+                        <img src="./images/새끼백조.jpg" alt="비디오1" class="img-fluid" data-bs-toggle="modal" data-bs-target="#videoModal1">
+                        <h4 class="text-center mt-3">Video PJT 1</h4>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item" data-category="video" >
+                        <img src="./images/설표.jpg" alt="비디오2" class="img-fluid" data-bs-toggle="modal" data-bs-target="#videoModal2">
+                        <h4 class="text-center mt-3">Video PJT 2</h4>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item" data-category="video">
+                        <img src="./images/으른고양이.jpg" alt="비디오3" class="img-fluid" data-bs-toggle="modal" data-bs-target="#videoModal3">
+                        <h4 class="text-center mt-3">Video PJT 3</h4>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item" data-category="video" >
+                        <img src="./images/으른백조.jpg" alt="비디오4" class="img-fluid" data-bs-toggle="modal" data-bs-target="#videoModal4">
+                        <h4 class="text-center mt-3">Video PJT 4</h4>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item" data-category="video" >
+                        <img src="./images/호랭이.jpg" alt="비디오5" class="img-fluid" data-bs-toggle="modal" data-bs-target="#videoModal5">
+                        <h4 class="text-center mt-3">Video PJT 5</h4>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- Portfolio end -->
 
 
 
@@ -253,7 +312,7 @@
 
 
         <section id="portfolio">
-            <!-- modal -->
+            <!-- modal start -->
             <div class="container mt-5">
                 <div class="row">
                     <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item">
@@ -277,11 +336,267 @@
                     </div>
                 </div>
             </div>
+            <!-- modal end -->
 
         </section>
 
+        <!-- tabs -->
+        <section id="tabs" class="tabs section my-5">
+            <div class="container section-title" data-aos="fade-up">
+                <h2 class="text-center">Departments</h2>
+                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, tempora eligendi.</p>
+            </div>
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                 <!-- container 여러 개 만들어도 됨!! -->
+                  <div class="row">
+                    <div class="col-lg-2">
+                        <ul class="nav nav-tabs flex-column">
+                            <li class="nav-item"><a class="nav-link active show" data-bs-toggle="tab" href="#tabs-tab-1">디자인 1</a></li>
+
+                            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#tabs-tab-2">디자인 2</a></li>
+
+                            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#tabs-tab-3">디자인 3</a></li>
+
+                            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#tabs-tab-4">디자인 4</a></li>
+
+                            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#tabs-tab-5">디자인 5</a></li>
+                        </ul>                        
+                    </div>
+                    <div class="col-lg-10 mt-5 mt-lg-0">
+                        <div class="tab-content">
+                            <div class="tab-pane active show" id="tabs-tab-1">
+                                <div class="row">
+                                    <div class="col-lg-8 details order-2 order-lg-1"> <!-- details : 나중을 위함 -->
+                                        <h3>디자인 1에 대한 설명을 적으시면 됩니다.</h3>
+                                        <p class="fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt rem, hic voluptas quaerat beatae minus molestiae, deleniti voluptatem molestias odio error at inventore recusandae ratione magni soluta, doloribus accusamus cum.</p>
+                                    </div>
+                                    <div class="col-lg-4 order-1 order-lg-2">
+                                        <a href="./images/꽃.jpg"><img src="./images/꽃.jpg" class="img-fluid" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="tabs-tab-2">
+                                <div class="row">
+                                    <div class="col-lg-8 details order-2 order-lg-1">
+                                        <h3>디자인 2에 대한 설명을 적으시면 됩니다.</h3>
+                                        <p class="fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt rem, hic voluptas quaerat beatae minus molestiae, deleniti voluptatem molestias odio error at inventore recusandae ratione magni soluta, doloribus accusamus cum.</p>
+                                    </div>
+                                    <div class="col-lg-4 order-1 order-lg-2">
+                                        <a href="./images/새.jpg"><img src="./images/새.jpg" class="img-fluid" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="tabs-tab-3">
+                                <div class="row">
+                                    <div class="col-lg-8 details order-2 order-lg-1">
+                                        <h3>디자인 3에 대한 설명을 적으시면 됩니다.</h3>
+                                        <p class="fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt rem, hic voluptas quaerat beatae minus molestiae, deleniti voluptatem molestias odio error at inventore recusandae ratione magni soluta, doloribus accusamus cum.</p>
+                                    </div>
+                                    <div class="col-lg-4 order-1 order-lg-2">
+                                        <a href="./images/새끼고양이.jpg"><img src="./images/새끼고양이.jpg" class="img-fluid" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="tabs-tab-4">
+                                <div class="row">
+                                    <div class="col-lg-8 details order-2 order-lg-1">
+                                        <h3>디자인 4에 대한 설명을 적으시면 됩니다.</h3>
+                                        <p class="fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt rem, hic voluptas quaerat beatae minus molestiae, deleniti voluptatem molestias odio error at inventore recusandae ratione magni soluta, doloribus accusamus cum.</p>
+                                    </div>
+                                    <div class="col-lg-4 order-1 order-lg-2">
+                                        <a href="./images/새끼멧돼지.jpg"><img src="./images/새끼멧돼지.jpg" class="img-fluid" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="tabs-tab-5">
+                                <div class="row">
+                                    <div class="col-lg-8 details order-2 order-lg-1">
+                                        <h3>디자인 5에 대한 설명을 적으시면 됩니다.</h3>
+                                        <p class="fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt rem, hic voluptas quaerat beatae minus molestiae, deleniti voluptatem molestias odio error at inventore recusandae ratione magni soluta, doloribus accusamus cum.</p>
+                                    </div>
+                                    <div class="col-lg-4 order-1 order-lg-2">
+                                        <a href="./images/새끼백조.jpg"><img src="./images/새끼백조.jpg" class="img-fluid" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        
+                    </div>
+                  </div>
+
+            </div>
+        </section>
+        <!-- tabs end -->
+ <!-- modal start -->
         <section id="modal-section">
-            <div class="container"> <!-- 따로 떨어져 나오기 때문에 따로 mt 설정 안 해도 됨 -->
+            <div class="container">
+                <div class="modal" id="designModal1" tabindex="-1" aria-hidden="true"><!--여기서 모달 하나 시작-->
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div  class="modal-content">
+                            <div class="modal-header">
+                                <h5>Design PJT 1. 무릉도원</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body"></div>
+                            <img src="./images/꽃.jpg" class="img-fluid mb-3" alt="">
+                            <p>이미지에 대한 설명을 적으시옵소서......</p>
+                            <div class="modal-footer"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal" id="designModal2" tabindex="-1" aria-hidden="true"><!--디자인모달2-->
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div  class="modal-content">
+                            <div class="modal-header">
+                                <h5>Design PJT 2. 야생차밭</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body"> <img src="./images/새.jpg" class="img-fluid mb-3" alt=""></div>
+                            <div class="modal-footer"><p>이미지에 대한 설명을 적으시옵소서......</p></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal" id="figmaModal1" tabindex="-1" aria-hidden="true"><!--피그마모달1-->
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div  class="modal-content">
+                            <div class="modal-header">
+                                <h5>Figma PJT 1. 티고을 로고</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body"></div>
+                            <img src="./images/새끼고양이.jpg" class="img-fluid mb-3" alt="">
+                            <p>이미지에 대한 설명을 적으시옵소서......</p>
+                            <div class="modal-footer"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal" id="figmaModal2" tabindex="-1" aria-hidden="true"><!--피그마모달2-->
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div  class="modal-content">
+                            <div class="modal-header">
+                                <h5>Figma PJT 2. 티고을 로고2</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body"></div>
+                            <img src="./images/새끼멧돼지.jpg" class="img-fluid mb-3" alt="">
+                            <p>이미지에 대한 설명을 적으시옵소서......</p>
+                            <div class="modal-footer"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="videoModal1" tabindex="-1" aria-hidden="true"><!--비디오모달1-->
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div  class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Video PJT Youtube 태하네</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body"></div>
+                                <div class="ratio ratio-16x9"><!--가로세로 비율이 16:9입니다 라는 의미-->
+                                    <iframe src="https://www.youtube.com/embed/1x3Kf4vBxLI?mute=1&control=1&loop=1"  allowfullscreen></iframe><!--loof는 유튜브에서 자동으로 막힘. -->
+                                </div>
+                            <p>태하와 예린이의 하루!</p>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="videoModal2" tabindex="-1" aria-hidden="true"><!--비디오모달2-->
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div  class="modal-content">
+                            <div class="modal-header">
+                                <h5>Video PJT Youtube2. 다도시간</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body"></div>
+                                <div class="ratio ratio-16x9">
+                                    <iframe src="https://www.youtube.com/embed/1jfWZkHjFag?autoplay=1&mute=1&control=1&loop=1"  allowfullscreen></iframe>
+                                </div> 
+
+                            <p>다도를 시작해 봅시다. </p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="videoModal3" tabindex="-1" aria-hidden="true"><!--비디오모달3-->
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div  class="modal-content">
+                            <div class="modal-header">
+                                <h5>Design PJT 6. 찻잔</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body"></div>
+                                <div class="ratio ratio-16x9">
+                                    <video src="./images/video/백조영상.mp4" controls muted loop autoplay></video>
+                                </div>
+
+                            <p>이 영상은 유튜브 링크 말고 mp4 파일로 넣은 것......</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="videoModal4" tabindex="-1" aria-hidden="true"><!--비디오모달4-->
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div  class="modal-content">
+                            <div class="modal-header">
+                                <h5>Video PJT Youtube2. 다도시간</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body"></div>
+                                <div class="ratio ratio-16x9">
+                                    <video src="./images/video/새끼멧돼지영상.mp4" controls muted loop autoplay></video>
+                                </div> 
+
+                            <p>다도를 시작해 봅시다. </p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="videoModal5" tabindex="-1" aria-hidden="true"><!--비디오모달5-->
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div  class="modal-content">
+                            <div class="modal-header">
+                                <h5>Design PJT 6. 찻잔</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body"></div>
+                                <div class="ratio ratio-16x9">
+                                    <video src="./images/video/펭귄영상.mp4" controls muted loop autoplay></video>
+                                </div>
+
+                            <p>차를 한잔 마셔봅시다. </p>
+
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <!-- modal end -->
+
+        <!-- 기존 모달 -->
+        <!-- <section id="modal-section">
+            <div class="container"> // 따로 떨어져 나오기 때문에 따로 mt 설정 안 해도 됨
                 <div class="modal" id="designModal1" tabindex="-1" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
@@ -322,14 +637,14 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <div class="ratio ratio-16x9"> <!-- ratio : 종횡비 / ratio-16x9 : 16:9 비율로 -->
+                                <div class="ratio ratio-16x9"> // ratio : 종횡비 / ratio-16x9 : 16:9 비율로 
                                     <iframe  src="https://www.youtube.com/embed/moFB-j5iY2E?autoplay=1&mute=1&control=1&loop=1"  allowfullscreen></iframe>
-                                </div> <!-- 영상 넣을 때 : '?' 뒤에 다 지우고 그 뒤에 'autoplay=1&mute=1&control=1&loop=1 : 1은 yes라는 뜻? 0은 no -->
+                                </div> // 영상 넣을 때 : '?' 뒤에 다 지우고 그 뒤에 'autoplay=1&mute=1&control=1&loop=1 : 1은 yes라는 뜻? 0은 no
 
                             </div>
                             
                             <p>얼음 속 잉어를 노리는 삼색이</p>
-                            <!-- footer 생략(생략 가능하기 때문에) / 그냥 여러 모양으로 보여주심 -->
+                            // footer 생략(생략 가능하기 때문에) / 그냥 여러 모양으로 보여주심
                         </div>
                     </div>
                 </div>
@@ -351,7 +666,7 @@
 
             </div>
 
-        </section>
+        </section> -->
     </main>
     <!-- / main -->
 
@@ -367,6 +682,7 @@
     <!-- / Footer -->
 
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/aos.js"></script>
     <script src="./js/app.js"></script> <!-- 내가 만들 거 -->
 </body>
 </html>
